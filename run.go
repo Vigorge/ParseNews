@@ -152,7 +152,7 @@ func scan_article(node *html.Node) *Article {
 }
 
 func main() {
-	log.Info("Downloader started")
+	log.Info("Download started")
 	items := downloadNews("https://news.mail.ru/incident/")
 	for n, i := range items {
 		fmt.Printf("[%d] %s\n	Фото: %s\n", n+1, i.Title, i.Ref)
